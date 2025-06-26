@@ -1,6 +1,5 @@
 pipeline {
     agent any
-
     stages {
         stage('Hello') {
             steps {
@@ -21,7 +20,6 @@ pipeline {
             steps {
                 sh 'java --version'
             }  
-        
        }
     }
 }
