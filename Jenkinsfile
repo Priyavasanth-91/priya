@@ -3,9 +3,6 @@ pipeline {
     stages {
         stage('cloneproject') {
             steps {
-                git credentialsId: 'Priyavasanth-91', branch: 'branch1', url: 'https://github.com/Priyavasanth-91/priya.git'
-            }
-        }
         stage('Clean') {
             steps {
                     sh 'mvn clean'
