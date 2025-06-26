@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('cloneproject') {
             steps {
-                git credentialsId: 'Priyavasanth-91', branch: 'branch1', url: 'https://github.com/Priyavasanth-91/priya/new/branch1'
+                git credentialsId: 'Priyavasanth-91', branch: 'branch1', url: 'https://github.com/Priyavasanth-91/priya/tree/branch1'
             }
         }
         stage('Clean') {
