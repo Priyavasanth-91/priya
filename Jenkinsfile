@@ -1,8 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('cloneproject') {
-            steps {
         stage('Clean') {
             steps {
                     sh 'mvn clean'
